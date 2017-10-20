@@ -1,0 +1,27 @@
+@import "normalize"
+@import "bourbon/bourbon"
+@import "base/base"
+@import "neat/neat"
+
+$red: #FF0000
+
+.red-background
+  background-color: $red
+
+$neat-grid: (columns: 9, gutter: 1rem)
+
+.container
+  @include grid-container
+
+header
+  @include grid-column(12)
+
+footer
+  @include grid-column(12)
+
+#title-bar
+  @include grid-column(12)
+    
+.box-2
+  @include grid-column(3)
+  height: 100px

@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title My Sinatra App
+    %link{:href => "/stylesheets/normalize.css", :rel => "stylesheet"}/
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'stylesheets/main.css'}
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
+    %script{:src => "/javascripts/application.js"}
+  %body
+    .container
+      %header
+        %h1
+          Header!
+      %section
+        = yield
+      %footer
+        Footer!
